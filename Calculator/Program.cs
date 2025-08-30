@@ -18,15 +18,16 @@ namespace Calculator
             string str = Console.ReadLine();
             char[] separators = { '+', '-', '*', '/', '%', '=' };
             char sign = ' ';
-            for (int i = 0; i < str.Length; i++)
-            {
-                for (int j = 0; j < separators.Length; j++)
-                {
-                    char c = str[i];
-                    if (c == separators[j]) sign = separators[j];
-                }
+            //for (int i = 0; i < str.Length; i++)
+            //{
+            //    for (int j = 0; j < separators.Length; j++)
+            //    {
+            //        char c = str[i];
+            //        if (c == separators[j]) sign = separators[j];
+            //    }
 
-            }
+            //}
+            Console.WriteLine(str.Contains("+"));
                 Console.WriteLine($"{sign}");
                 string[] values = str.Split(separators);
                 double number1 = Convert.ToDouble(values[0]);

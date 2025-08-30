@@ -59,7 +59,7 @@ namespace Game
                 Console.Write('@');
                 Console.CursorVisible = false;
 
-                ConsoleKeyInfo key = Console.ReadKey();
+                ConsoleKeyInfo key = Console.ReadKey(true);
                 switch (key.Key)
                 {
                     case ConsoleKey.UpArrow:
