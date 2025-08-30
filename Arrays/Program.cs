@@ -1,5 +1,6 @@
 ﻿//#define ARAYS1
 //#define ARAYS2
+#define JAGGED_ARRAYS
 
 using System;
 using System.Collections.Generic;
@@ -85,9 +86,34 @@ namespace Arrays
             Console.WriteLine($"\nМинимальный элемент элементов:{i_arr_2.Cast<int>().Min()}");
             Console.WriteLine($"\nМаксимальный элементов:{i_arr_2.Cast<int>().Max()}"); 
 #endif
+
+#if JAGGED_ARRAYS
+
+            int[][] arr = new int[][]
+            {
+               new int[] {3,5,8 },
+               new int[] {13,21 },
+               new int[] {34,55,89 },
+               new int[] {144,233 }
+            };
+
+            for (int i = 0; i < arr.Length; i++)
+            {
+                for (int j = 0; j < arr[i].Length; j++)
+                {
+                    Console.Write(arr[i][j]+"\t");
+                }
+            Console.WriteLine();
+            }
+#endif
+
+         
+
+
+
         }
     }
-}
+    }
 
 
 
