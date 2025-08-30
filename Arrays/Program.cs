@@ -1,4 +1,5 @@
 ﻿//#define ARAYS1
+//#define ARAYS2
 
 using System;
 using System.Collections.Generic;
@@ -54,6 +55,7 @@ namespace Arrays
             Console.WriteLine(arr.Max());
             Console.WriteLine(arr.Min()); 
 #endif
+#if ARAYS2
             Console.WriteLine("Введите количество строк: ");
             int rows = Convert.ToInt32(Console.ReadLine());
 
@@ -81,7 +83,8 @@ namespace Arrays
             Console.WriteLine($"\nСумма элементов:{i_arr_2.Cast<int>().Sum()}");
             Console.WriteLine($"\nСреднеарифметическое элементов:{i_arr_2.Cast<int>().Average()}");
             Console.WriteLine($"\nМинимальный элемент элементов:{i_arr_2.Cast<int>().Min()}");
-            Console.WriteLine($"\nМаксимальный элементов:{i_arr_2.Cast<int>().Max()}");
+            Console.WriteLine($"\nМаксимальный элементов:{i_arr_2.Cast<int>().Max()}"); 
+#endif
         }
     }
 }
